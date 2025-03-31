@@ -117,13 +117,27 @@ services:
     command: >
       sh -c "rm -f ./kafka/kafka-logs-kafka/meta.properties && start-kafka.sh"
 
+  # dashboard:
+  #   build: ./dashboard
+  #   ports:
+  #     - "80:80"
+  #   depends_on:
+  #     - analyzer
+  #     - processing
+
   dashboard:
-    build: ./dashboard
+    image: nginx
+    restart: always
     ports:
       - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro  # Mount custom nginx.conf
+      - ./dashboard:/usr/share/nginx/html  # Serve the dashboard UI files
     depends_on:
       - analyzer
       - processing
+    networks:
+      - mynetwork
 
 volumes:
   zookeeper-data: 
