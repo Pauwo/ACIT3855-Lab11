@@ -132,7 +132,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro  # Mount custom nginx.conf
-      - ./dashboard/src:/usr/share/nginx/html  # Serve the dashboard UI files
+      - ./dashboard:/usr/share/nginx/html  # Serve the dashboard UI files
     depends_on:
       - analyzer
       - processing
