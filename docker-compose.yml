@@ -136,7 +136,7 @@ services:
     depends_on:
       - analyzer
       - processing
-      - analyzer
+      - receiver
     networks:
       - mynetwork
 
