@@ -53,9 +53,9 @@ DEFAULT_STATS = {
     "num_flight_schedules": 0,
     "num_passenger_checkins": 0,
     "max_luggage_weight": 0,
-    "min_luggage_weight": float("inf"),
+    "min_luggage_weight": 100000,
     "max_flight_duration": 0,
-    "min_flight_duration": float("inf"),
+    "min_flight_duration": 100000,
     "last_updated": "2000-01-01 00:00:00"
 }
 
