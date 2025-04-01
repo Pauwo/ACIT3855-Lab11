@@ -11,6 +11,7 @@ from connexion import FlaskApp
 import random
 from datetime import datetime
 import pytz 
+import os
 
 
 app = connexion.FlaskApp(__name__, specification_dir="./")
