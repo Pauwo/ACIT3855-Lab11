@@ -20,7 +20,9 @@ services:
 
 
   processing:
-    image: pauwo/acit4850_assignment3_processing/processingapp
+    build:
+      context: processing
+      dockerfile: Dockerfile
     environment:
       CORS_ALLOW_ALL: no # Change to yes if you want to allow all requests
     # ports:
