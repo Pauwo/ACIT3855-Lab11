@@ -34,8 +34,7 @@
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Flight Schedule Request">
           <stringProp name="HTTPSampler.domain">20.55.37.190</stringProp>
-          <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.path">/flights/schedule</stringProp>
+          <stringProp name="HTTPSampler.path">/receiver/flights/schedule</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
@@ -69,8 +68,7 @@
         </hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Passenger Checkin Request">
           <stringProp name="HTTPSampler.domain">20.55.37.190</stringProp>
-          <stringProp name="HTTPSampler.port">8080</stringProp>
-          <stringProp name="HTTPSampler.path">/passenger/checkin</stringProp>
+          <stringProp name="HTTPSampler.path">/receiver/passenger/checkin</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
