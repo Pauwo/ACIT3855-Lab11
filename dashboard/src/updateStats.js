@@ -1,10 +1,10 @@
 /* UPDATE THESE VALUES TO MATCH YOUR SETUP */
 
-const PROCESSING_STATS_API_URL = "http://20.55.37.190:8100/stats"
+const PROCESSING_STATS_API_URL = "http://20.55.37.190/processing/stats"
 const ANALYZER_API_URL = {
-    stats: "http://20.55.37.190:8110/stats",
-    flight: "http://20.55.37.190:8110/flights/schedule/random",
-    passenger: "http://20.55.37.190:8110/passenger/checkin/random"
+    stats: "http://20.55.37.190/analyzer/stats",
+    flight: "http://20.55.37.190/analyzer/flights/schedule/random",
+    passenger: "http://20.55.37.190/analyzer/passenger/checkin/random"
 }
 
 // This function fetches and updates the general statistics
