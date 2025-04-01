@@ -84,7 +84,7 @@ services:
     # ports:
     #   - "8090:8090"
     environment:
-      CORS_ALLOW_ALL: no # Change to yes if you want to allow all requests
+      CORS_ALLOW_ALL: yes # Change to yes if you want to allow all requests
     depends_on:
       - db
       - kafka
